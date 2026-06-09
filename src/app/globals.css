@@ -165,6 +165,6 @@ img { display: block; max-width: 100%; }
 @media (min-width: 1024px) {
   .desktop-photo-shift {
     padding-left: 15%;
-    padding-top: 15vh;
+    padding-top: 5vh;
   }
 }
