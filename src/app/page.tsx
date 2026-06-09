@@ -62,7 +62,7 @@ function MaterialShowcase() {
                 </div>
               </FadeUp>
               
-              <div className="lg:pl-[15%] lg:pt-[5vh]">
+              <div className="lg:pl-[15%] lg:pt-[15vh]">
                 <FadeUp delay={0.1}>
                   <div 
                     className="relative aspect-[16/9] lg:aspect-[4/5] w-full lg:w-[50%] overflow-hidden bg-[#e8e8e8] mb-4"
