@@ -62,10 +62,11 @@ function MaterialShowcase() {
                 </div>
               </FadeUp>
               
-              <FadeUp delay={0.1}>
-                <div 
-                  className="relative aspect-[16/9] lg:aspect-[4/5] w-full lg:w-[55%] overflow-hidden bg-[#e8e8e8] mb-4 ml-0 lg:ml-[15%] mt-4 lg:mt-[5vh]"
-                >
+              <div className="lg:pl-[15%] lg:pt-[5vh]">
+                <FadeUp delay={0.1}>
+                  <div 
+                    className="relative aspect-[16/9] lg:aspect-[4/5] w-full lg:w-[65%] overflow-hidden bg-[#e8e8e8] mb-4"
+                  >
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={activeMaterial.img}
@@ -87,7 +88,7 @@ function MaterialShowcase() {
                   </AnimatePresence>
                 </div>
               </FadeUp>
-              
+              </div>
               {/* Static Technical Spec moved inside sticky container */}
               <div className="hidden lg:block w-full">
                 <div className="w-full lg:w-[55%] lg:ml-12">
