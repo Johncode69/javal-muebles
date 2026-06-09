@@ -29,15 +29,15 @@ const FEATURED_PROJECTS = [
 ];
 
 const INDUSTRIAL_MATERIALS = [
-  { id: "melamina", name: "Melamina (MDP)", img: "/images/wood_melamina.png", desc: "El rey indiscutible para el ensamblaje de muebles modulares (clósets, cocinas y oficinas). Ya viene terminado, lo que evita pintura, y es muy fácil de instalar." },
-  { id: "mdf", name: "MDF (Tablero de Fibra)", img: "/images/wood_mdf.png", desc: "Usado ampliamente para muebles a medida, cajones y piezas que requieren formas curvas o molduras por su superficie uniforme." },
-  { id: "triplex", name: "Triplex de Pino", img: "/images/wood_triplex.png", desc: "Ideal para la parte trasera de los muebles (espaldarios) o fondos de cajones gracias a su increíble ligereza y resistencia." },
+  { id: "melamina", name: "Melamina (MDP)", img: "/images/wood_melamina_hd.png", desc: "El rey indiscutible para el ensamblaje de muebles modulares (clósets, cocinas y oficinas). Ya viene terminado, lo que evita pintura, y es muy fácil de instalar." },
+  { id: "mdf", name: "MDF (Tablero de Fibra)", img: "/images/wood_mdf_hd.png", desc: "Usado ampliamente para muebles a medida, cajones y piezas que requieren formas curvas o molduras por su superficie uniforme." },
+  { id: "triplex", name: "Triplex de Pino", img: "/images/wood_triplex_hd.png", desc: "Ideal para la parte trasera de los muebles (espaldarios) o fondos de cajones gracias a su increíble ligereza y resistencia." },
 ];
 
 const SOLID_MATERIALS = [
-  { id: "pino", name: "Pino", img: "/images/wood_pino.png", desc: "La madera maciza más abundante y accesible. Muy usada para camas, repisas y mobiliario de estilo rústico y cálido." },
-  { id: "flor-morado", name: "Flor Morado", img: "/images/wood_flor_morado.png", desc: "Una de las mejores maderas nativas para carpintería de lujo. Semidura, muy estable y atractiva para interiores." },
-  { id: "cedro", name: "Cedro y Roble", img: "/images/wood_cedro.png", desc: "Utilizados para comedores, puertas y muebles que requieren una altísima durabilidad, resistencia estructural y acabados clásicos." },
+  { id: "pino", name: "Pino", img: "/images/wood_pino_hd.png", desc: "La madera maciza más abundante y accesible. Muy usada para camas, repisas y mobiliario de estilo rústico y cálido." },
+  { id: "flor-morado", name: "Flor Morado", img: "/images/wood_flor_morado_hd.png", desc: "Una de las mejores maderas nativas para carpintería de lujo. Semidura, muy estable y atractiva para interiores." },
+  { id: "cedro", name: "Cedro y Roble", img: "/images/wood_cedro_hd.png", desc: "Utilizados para comedores, puertas y muebles que requieren una altísima durabilidad, resistencia estructural y acabados clásicos." },
 ];
 
 const ALL_MATERIALS = [...INDUSTRIAL_MATERIALS, ...SOLID_MATERIALS];
