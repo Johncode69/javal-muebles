@@ -53,7 +53,7 @@ function MaterialShowcase() {
           {/* LEFT COLUMN (Title + Image Sticky + Description) - Span 5 cols */}
           <div className="lg:col-span-5 lg:col-start-1 flex flex-col self-start sticky top-[90px] lg:top-24 z-20 w-full bg-white pb-4 pt-6 lg:pt-0 lg:pb-0 lg:bg-transparent">
             <div className="w-full">
-              <FadeUp className="mb-4 lg:mb-12">
+              <FadeUp className="mb-4 lg:mb-6">
                 <div>
                   <p className="text-[#C9A84C] text-[10px] uppercase tracking-[0.2em] mb-4">Colección 2025</p>
                   <h2 className="text-[clamp(2.2rem,8vw,5rem)] font-condensed uppercase leading-[0.9] text-black break-words">
@@ -64,8 +64,7 @@ function MaterialShowcase() {
               
               <FadeUp delay={0.1}>
                 <div 
-                  className="relative aspect-[16/9] lg:aspect-[4/5] w-full lg:w-[60%] overflow-hidden bg-[#e8e8e8] mb-4 ml-0 lg:ml-12"
-                  style={{ marginTop: '5vh' }}
+                  className="relative aspect-[16/9] lg:aspect-[4/5] w-full lg:w-[55%] overflow-hidden bg-[#e8e8e8] mb-4 ml-0 lg:ml-12 mt-4 lg:mt-6"
                 >
                   <AnimatePresence mode="wait">
                     <motion.div
@@ -91,20 +90,17 @@ function MaterialShowcase() {
               
               {/* Static Technical Spec moved inside sticky container */}
               <div className="hidden lg:block w-full">
-                <div 
-                  className="w-full lg:w-[60%]"
-                  style={{ marginLeft: "5%" }}
-                >
+                <div className="w-full lg:w-[55%] lg:ml-12">
                   <FadeUp delay={0.2}>
-                    <div className="pt-4 border-t border-[#e2e2e2]">
+                    <div className="pt-3 border-t border-[#e2e2e2]">
                       <div className="flex flex-col gap-1 items-start">
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-1.5">
                           <div className="w-[4px] h-[4px] bg-[#C9A84C]" />
                           <h4 className="text-[10px] text-black font-semibold uppercase tracking-[0.2em]">
                             Especificación Técnica
                           </h4>
                         </div>
-                        <p className="text-[12px] leading-[1.6] text-justify text-[#767676] font-light italic">
+                        <p className="text-[11px] leading-[1.5] text-justify text-[#767676] font-light italic">
                           En zonas húmedas como cocinas y baños, empleamos tableros RH (Resistentes a la Humedad) para garantizar su máxima durabilidad estructural.
                         </p>
                       </div>
