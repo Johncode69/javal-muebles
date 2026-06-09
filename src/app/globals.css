@@ -164,7 +164,7 @@ img { display: block; max-width: 100%; }
 /* Custom class to force photo layout without relying on Tailwind v4 arbitrary value generation */
 @media (min-width: 1024px) {
   .desktop-photo-shift {
-    padding-left: 15%;
+    padding-left: 10%;
     padding-top: 5vh;
   }
 }
