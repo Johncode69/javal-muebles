@@ -160,3 +160,11 @@ img { display: block; max-width: 100%; }
 .img-zoom:hover .next-image {
   transform: scale(1.07);
 }
+
+/* Custom class to force photo layout without relying on Tailwind v4 arbitrary value generation */
+@media (min-width: 1024px) {
+  .desktop-photo-shift {
+    padding-left: 15%;
+    padding-top: 15vh;
+  }
+}
