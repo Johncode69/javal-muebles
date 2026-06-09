@@ -64,7 +64,7 @@ function MaterialShowcase() {
               
               <FadeUp delay={0.1}>
                 <div 
-                  className="relative aspect-[16/9] lg:aspect-[4/5] w-full lg:w-[55%] overflow-hidden bg-[#e8e8e8] mb-4 ml-0 lg:ml-12 lg:translate-x-[15%] mt-4 lg:mt-[5%]"
+                  className="relative aspect-[16/9] lg:aspect-[4/5] w-full lg:w-[55%] overflow-hidden bg-[#e8e8e8] mb-4 ml-0 lg:ml-32 mt-4 lg:mt-16"
                 >
                   <AnimatePresence mode="wait">
                     <motion.div
