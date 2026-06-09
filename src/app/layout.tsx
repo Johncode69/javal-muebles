@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { WhatsAppWidget } from "@/components/whatsapp-widget";
@@ -21,6 +21,13 @@ export const metadata: Metadata = {
   description:
     "Muebles de madera finos a medida. Diseño de interiores con materiales premium para espacios únicos.",
   keywords: "muebles madera, carpintería, remodelaciones, diseño interiores, muebles a medida",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

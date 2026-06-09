@@ -56,7 +56,7 @@ function MaterialShowcase() {
               <FadeUp className="mb-4 lg:mb-12">
                 <div>
                   <p className="text-[#C9A84C] text-[10px] uppercase tracking-[0.2em] mb-4">Colección 2025</p>
-                  <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-condensed uppercase leading-[0.9] text-black">
+                  <h2 className="text-[clamp(2.2rem,8vw,5rem)] font-condensed uppercase leading-[0.9] text-black break-words">
                     MADERA VIVA
                   </h2>
                 </div>
@@ -148,9 +148,9 @@ function MaterialShowcase() {
                         onMouseEnter={() => setActiveId(item.id)}
                       >
                         <h3 
-                          className={`font-condensed uppercase transition-all duration-500 text-[clamp(3rem,6vw,5.5rem)] leading-[0.85] ${
+                          className={`font-condensed uppercase transition-all duration-500 text-[clamp(2.2rem,8vw,5.5rem)] leading-[0.85] break-words ${
                             isActive 
-                              ? 'text-black translate-x-2 lg:translate-x-4' 
+                              ? 'text-black lg:translate-x-4' 
                               : 'text-[#e2e2e2] group-hover:text-[#b0b0b0]'
                           }`}
                         >
@@ -371,7 +371,7 @@ export default function Home() {
         </section>
 
         {/* ── FEATURED PROJECTS ── */}
-        <section className="bg-[#171719]">
+        <section className="bg-[#171719] overflow-hidden">
           {/* Section label */}
           <div className="container-henge pt-20 pb-10 flex items-end justify-between">
             <div>

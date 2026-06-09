@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -26,6 +25,8 @@
 
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* DEBUG OUTLINES: Remove this later! */
+/* * { outline: 1px solid red !important; } */
 
 html {
   /* Lenis expects scroll on html */
@@ -41,7 +42,6 @@ body {
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 a { color: inherit; text-decoration: none; }
