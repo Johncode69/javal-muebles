@@ -1,0 +1,162 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: var(--gold);
+  --color-surface: var(--surface);
+  --color-muted-fg: var(--muted-fg);
+  --color-border: var(--border);
+  --font-sans: var(--font-barlow), "Helvetica Neue", Arial, sans-serif;
+  --font-condensed: var(--font-barlow-condensed), "Arial Narrow", Arial, sans-serif;
+}
+
+:root {
+  --background: #171719;
+  --foreground: #ffffff;
+  --gold: #C9A84C;
+  --surface: #ffffff;
+  --dark: #0e0e0e;
+  --muted-fg: #767676;
+  --border: rgba(255,255,255,0.1);
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  /* Lenis expects scroll on html */
+  scroll-behavior: auto !important;
+}
+
+body {
+  background-color: #171719;
+  color: #ffffff;
+  font-family: var(--font-barlow), "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ── Henge-exact typography scale ── */
+.heading-hero {
+  font-family: var(--font-barlow-condensed);
+  font-size: clamp(60px, 8vw, 100px);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading-xl {
+  font-family: var(--font-barlow-condensed);
+  font-size: clamp(40px, 5vw, 70px);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading-lg {
+  font-family: var(--font-barlow-condensed);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading-md {
+  font-family: var(--font-barlow-condensed);
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading-sm {
+  font-family: var(--font-barlow-condensed);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.label {
+  font-family: var(--font-barlow);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  font-family: var(--font-barlow-condensed);
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.body-sm {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+/* ── Layout ── */
+/* Henge uses ~117px padding at desktop = ~8vw */
+.container-henge {
+  padding-left: clamp(24px, 8vw, 117px);
+  padding-right: clamp(24px, 8vw, 117px);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #171719; }
+::-webkit-scrollbar-thumb { background: #333; }
+
+/* ── Horizontal scroll (categories) ── */
+.scroll-x, .hide-scrollbar {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll-x::-webkit-scrollbar, .hide-scrollbar::-webkit-scrollbar { display: none; }
+
+/* ── Hover underline ── */
+.hover-line {
+  position: relative;
+}
+.hover-line::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #C9A84C;
+  transition: width 0.3s cubic-bezier(0.25,0.1,0.25,1);
+}
+.hover-line:hover::after { width: 100%; }
+
+/* ── Image zoom on hover ── */
+.img-zoom { overflow: hidden; }
+.img-zoom img,
+.img-zoom .next-image {
+  transition: transform 0.8s cubic-bezier(0.25,0.1,0.25,1);
+}
+.img-zoom:hover img,
+.img-zoom:hover .next-image {
+  transform: scale(1.07);
+}
